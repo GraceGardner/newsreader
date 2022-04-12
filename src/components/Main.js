@@ -1,7 +1,14 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import {Link} from 'react-router-dom'
+import {getArticles} from '../apiCalls.js'
 
 const Main = () => {
+
+  useEffect(() => {
+    getArticles('home')
+    .then(response => console.log(response))
+  }, [])
+
 
   return (
     <>
