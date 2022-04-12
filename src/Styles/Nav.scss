@@ -1,0 +1,9 @@
+@import './_variables';
+@import './_mixins';
+
+.nav-container {
+  width: 100vw;
+  background-color: $dark-grey;
+  color: $white;
+  margin: 0;
+}

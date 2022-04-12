@@ -1,0 +1,9 @@
+@import './_variables';
+@import './_mixins';
+
+.side-bar-container {
+  height: 100vh;
+  width: 30vw;
+  border-right-style: 1px solid $dark-grey;
+  display: flex;
+}
