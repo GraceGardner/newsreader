@@ -1,0 +1,8 @@
+@import './_variables';
+@import './_mixins';
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}

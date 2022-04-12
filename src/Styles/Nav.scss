@@ -6,4 +6,18 @@
   background-color: $dark-grey;
   color: $white;
   margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vw 2vw;
+}
+
+.search-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 34vw;
+}
+
+.filter-button {
+  width: 10vw;
 }

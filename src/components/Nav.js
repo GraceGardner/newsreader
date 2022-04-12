@@ -12,8 +12,15 @@ const Nav = () => {
   return (
     <div className='nav-container'>
       <h1>News Reader</h1>
-      <input type='text' placeholder='search ...'/>
-      <button onClick={toggleClick}>filter by</button>
+      <div className='search-container'>
+        <input type='text' placeholder='search ...'/>
+        <button
+          onClick={toggleClick}
+          className='filter-button'
+        >
+          filter by
+        </button>
+      </div>
       {clicked && <Dropdown toggleClick={toggleClick}/>}
     </div>
 )
