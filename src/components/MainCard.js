@@ -12,19 +12,17 @@ const MainCard = ({article}) => {
 
   return (
     <>
-      <Link to='/SelectedArticle' className='card-link'>
-        <div className='article-card' onClick={handleArticleClick}>
-        {article.multimedia &&
-          <img
-            className='card-img'
-            src={article.multimedia[0].url}
-            alt={article.multimedia[0].caption}
-          />
-        }
-          <h2 className='card-title'>{article.title}</h2>
-          <h3 className='card-author'>{article.author}</h3>
-        </div>
-      </Link>
+      <div className='article-card' onClick={handleArticleClick}>
+      {article.multimedia &&
+        <img
+          className='card-img'
+          src={article.multimedia[0].url}
+          alt={article.multimedia[0].caption}
+        />
+      }
+        <h2 className='card-title'>{article.title}</h2>
+        <h3 className='card-author'>{article.author}</h3>
+      </div>
     </>
   )
 }

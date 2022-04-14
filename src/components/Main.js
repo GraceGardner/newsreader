@@ -16,10 +16,9 @@ const Main = () => {
   }, [])
 
   const displayArticles = () => {
-    console.log(category)
-    return category.map(article => {
+    return category.map((article, i) => {
       return(
-        <Link to='/SelectedArticle'>
+        <Link to='/SelectedArticle' key={i}>
           <MainCard article={article}/>
         </Link>
       )
