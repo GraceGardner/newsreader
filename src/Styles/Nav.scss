@@ -12,12 +12,14 @@
   padding: 2vw 2vw;
 }
 
-.search-container {
-  display: flex;
-  justify-content: space-evenly;
-  width: 34vw;
-}
+
 
 .filter-button {
   width: 10vw;
+  margin-right: 4vw;
+}
+
+.page-title {
+  font-size: 3vw;
+  font-weight: bolder;
 }
