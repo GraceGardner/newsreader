@@ -6,4 +6,20 @@
   background-color: $dark-grey;
   color: $white;
   margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vw 2vw;
+}
+
+
+
+.filter-button {
+  width: 10vw;
+  margin-right: 4vw;
+}
+
+.page-title {
+  font-size: 3vw;
+  font-weight: bolder;
 }

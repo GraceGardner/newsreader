@@ -1,0 +1,38 @@
+@import './_variables';
+@import './_mixins';
+
+.article {
+  display: flex;
+  width: 95vw;
+  height: 85vh;
+    margin: 2vw;
+}
+
+.article-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.article-img {
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+}
+
+.article-title {
+  font-size: 30px;
+  font-weight: bolder;
+  text-align: center;
+  margin: 1vw;
+}
+
+.article-author,
+.article-abstract {
+  margin: 1vw;
+  text-align: center;
+}
+
+.article-link {
+
+}
