@@ -1,17 +1,19 @@
 import React, {useEffect, useContext} from 'react'
 import MainCard from './MainCard'
 import { CategoryContext } from '../Context/CategoryContext'
+import {ErrorContext} from '../Context/ErrorContext'
 import {Link} from 'react-router-dom'
 import {getArticles} from '../apiCalls.js'
 import '../Styles/Main.scss'
 
 const Main = () => {
   const {category, setCategory} = useContext(CategoryContext)
-
+  const {setError} = useContext(ErrorContext)
 
   useEffect(() => {
     getArticles('home')
     .then(response => setCategory(response.results))
+    .catch(error => setError(error))
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
