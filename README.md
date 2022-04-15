@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# News Reader Take Home
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contents   
 
-## Available Scripts
+- [Abstract](#abstract)
+- [Project Goals](#project-goals)
+- [Project Specs](#project-specs)
+- [Challenges](#challenges)
+- [Future Iterations](#future-iterations)
+- [Install and Setup](#install-and-setup)
+- [api](#api)
+- [Tech Stack](#tech-stack)
+- [Contributors](#contributors)
 
-In the project directory, you can run:
+## Abstract
 
-### `npm start`
+News Reader is a mock take home challenge assigned by Turing School of Software and designed. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Project Goals
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Render a list of articles 
+- Be able to render a “detailed” view for each article
+- Articles in the list must link to the detailed article view
+- Filter functionality
+- Complete in 8 hours or less
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Project Specs
 
-### `npm run build`
+View the spec for this project [here](https://mod4.turing.edu/projects/take_home/take_home_fe).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+As a user I can see a selection of articles upon page load of the home page. 
+<img width="1436" alt="Screen Shot 2022-04-14 at 11 22 40 PM" src="https://user-images.githubusercontent.com/42048868/163524902-43b32565-10c4-4a71-bd44-db42a276b8bb.png">
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+As a user I can filter articles by category. 
+<img width="1438" alt="Screen Shot 2022-04-14 at 11 22 51 PM" src="https://user-images.githubusercontent.com/42048868/163524969-cb14780c-abea-4a51-8160-4f7127ddd981.png">
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+As a user I can select an article and am taken to a details page. 
+<img width="1440" alt="Screen Shot 2022-04-14 at 11 23 05 PM" src="https://user-images.githubusercontent.com/42048868/163525004-a6a65653-46cf-4352-ae3e-176bbe6e831e.png">
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Challenges
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Incomplete data from api, conditional rendering exclusively when information exists. 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Future Iterations
 
-## Learn More
+- Add a search bar and search functionality
+- I would love to be able to display the whole article on the details page
+- Update styling to make it a cleaner and more seamless user experience 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Install and Setup
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To run this app locally:
 
-### Code Splitting
+1. fork this repository
+2. run ```git clone git clone git@github.com:GraceGardner/newsreader.git``` in your command line
+3. Run ```cd newsreader``` to navigate into the repository
+4. Run ```npm install```
+5. Run ```npm start```
+6. Visit ```http://localhost:3000/``` in your browser to view the local app!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+## api
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+For this project, I accessed data from the following api: 
 
-### Making a Progressive Web App
+[NY Times Top Stories api](https://developer.nytimes.com/docs/top-stories-product/1/overview)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Tech Stack
 
-### Advanced Configuration
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
 
-### Deployment
+![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+## Contributors
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[Grace Gardner](https://github.com/GraceGardner)
